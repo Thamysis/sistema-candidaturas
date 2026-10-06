@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículo | Candidatura Keeta</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="upload-page">
+    <header class="site-header upload-header"><span class="linkedin-mark">in</span></header>
+    <main class="page-content">
+      <section class="upload-card" aria-labelledby="application-title">
+        <h1 id="application-title">Candidate-se à empresa Keeta</h1>
+        <p class="upload-step">Página 2 de 3</p>
+        <div class="progress-track upload-progress" role="progressbar" aria-label="Progresso da candidatura" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"><span></span></div>
+        <h2>Currículo</h2>
+        <p class="upload-description">Envie um currículo recente.</p>
+        <p class="upload-requirements">Formatos aceitos: DOC, DOCX ou PDF • Tamanho máximo: 2 MB</p>
+
+        <input id="resume-file" class="visually-hidden" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+        <button class="load-resume" type="button">Carregar currículo</button>
+
+        <div class="selected-resume">
+          <div><strong id="resume-name">Curriculo_Thamyres.pdf</strong><span id="resume-meta">1,2 MB • PDF</span></div>
+          <button type="button" class="select-resume">Selecionar</button>
+        </div>
+
+        <div class="upload-error" role="alert">
+          <strong>Não foi possível enviar seu currículo</strong>
+          <p>Verifique se o arquivo está em PDF, DOC ou DOCX e possui menos de 2 MB.</p>
+          <p>Se o arquivo estiver correto, tente novamente.</p>
+          <div class="error-actions"><button type="button" class="choose-another">Escolher outro arquivo</button><button type="button" class="try-again">Tentar novamente</button></div>
+        </div>
+
+        <div class="upload-actions"><a href="formulario.html">Voltar</a><button type="button" class="advance-button">Avançar</button></div>
+      </section>
+    </main>
+  </body>
+</html>

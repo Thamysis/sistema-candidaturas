@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastre-se | infojobs</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <span class="brand">infojobs</span>
+      <a class="login-link" href="#entrar">Entrar</a>
+    </header>
+
+    <main class="page-content">
+      <section class="signup-card" aria-labelledby="signup-title">
+        <h1 id="signup-title">Cadastre-se</h1>
+        <p class="subtitle">Crie sua conta para continuar.</p>
+
+        <form id="signup-form" novalidate>
+          <div class="field email-field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="nome@exemplo.com" autocomplete="email" required aria-describedby="email-error" />
+            <p class="error" id="email-error" aria-live="polite"></p>
+          </div>
+
+          <div class="field password-field">
+            <label for="password">Senha</label>
+            <div class="password-control">
+              <input id="password" name="password" type="password" placeholder="••••••••••••" autocomplete="new-password" required aria-describedby="password-rules password-error" />
+              <button type="button" class="reveal-password" aria-label="Mostrar senha" aria-pressed="false">
+                <svg viewBox="0 0 28 22" width="28" height="22" fill="none" aria-hidden="true">
+                  <path d="M2 11s4.3-7 12-7 12 7 12 7-4.3 7-12 7S2 11 2 11Z" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="14" cy="11" r="3.5" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </button>
+            </div>
+            <p class="error" id="password-error" aria-live="polite"></p>
+          </div>
+
+          <div class="rules" id="password-rules">
+            <p class="rules-title">Sua senha deve conter:</p>
+            <ul>
+              <li>✓ Pelo menos 8 caracteres</li>
+              <li>✓ Uma letra maiúscula e uma minúscula</li>
+              <li>✓ Pelo menos um número</li>
+              <li>✓ Pelo menos um caractere especial</li>
+            </ul>
+          </div>
+
+          <button class="submit-button" type="submit">Cadastre-se</button>
+          <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

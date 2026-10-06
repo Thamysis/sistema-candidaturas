@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informações pessoais | infojobs</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="form-page">
+    <header class="site-header">
+      <span class="brand">infojobs</span>
+      <a class="header-link" href="#buscar-vagas">Buscar vagas</a>
+    </header>
+    <main class="page-content">
+      <section class="form-card" aria-labelledby="form-title">
+        <p class="step-eyebrow">Etapa 2 de 3 — Dados do currículo</p>
+        <h1 id="form-title">Informações pessoais</h1>
+        <div class="progress-track" role="progressbar" aria-label="Progresso do currículo" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span></span></div>
+        <div class="form-steps" aria-label="Etapas dos dados do currículo">
+          <span>2.1 Informações pessoais</span><span>2.2 Experiência</span><span>2.3 Formação</span><span>2.4 Informações adicionais</span>
+        </div>
+
+        <form id="personal-form" novalidate>
+          <div class="form-grid">
+            <div class="field full-width">
+              <label for="full-name">Nome completo *</label>
+              <input id="full-name" name="fullName" value="Thamyres Santos Silva" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="cpf">CPF *</label>
+              <input id="cpf" name="cpf" inputmode="numeric" placeholder="000.000.000-00" maxlength="14" required />
+            </div>
+            <div class="field">
+              <label for="phone">Telefone *</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="(00) 00000-0000" maxlength="15" required />
+            </div>
+            <div class="field">
+              <label for="birth-date">Data de nascimento *</label>
+              <input id="birth-date" name="birthDate" inputmode="numeric" placeholder="DD/MM/AAAA" maxlength="10" required />
+            </div>
+            <div class="field">
+              <label for="marital-status">Estado civil</label>
+              <select id="marital-status" name="maritalStatus">
+                <option value="">Selecione</option>
+                <option>Solteiro(a)</option><option>Casado(a)</option><option>Divorciado(a)</option><option>Viúvo(a)</option><option>União estável</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="autosave-notice" role="status">
+            <strong>✓ Seu progresso é salvo automaticamente</strong>
+            <span>Você pode voltar e continuar o preenchimento depois.</span>
+          </div>
+
+          <div class="social-section">
+            <label>Redes sociais <span>(opcional)</span></label>
+            <div id="social-links"></div>
+            <button class="add-social" type="button">+ Adicionar rede social</button>
+          </div>
+
+          <div class="form-actions">
+            <a class="back-link" href="index.html">← Voltar</a>
+            <button class="continue-button" type="submit">Salvar e continuar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
